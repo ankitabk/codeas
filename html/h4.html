@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>
+   on submit
+	</title>
+</head>
+<body>
+  <form onsubmit="return rand();" id="form1" action="huu.html">//on submit 
+   enter the name:<input value="name" type="text" id="userid">
+   password<input value="pass" type="text" id="pw">
+   <input type="submit" id="sub">
+</form>
+<script type="text/javascript">
+ 
+
+ function rand(){
+  var rand=document.forms[0].userid.value;
+  var rand2=document.forms[0].pw.value;
+ 	if(rand=="ankita"&&rand2=="123"){
+ 		document.getElementById(form1).submit();
+ 		return true;
+ 	}
+ 	else{
+ 		//alert("wrong");
+ 		return false;
+ 	}
+ }
+</script>
+</body>
+</html>

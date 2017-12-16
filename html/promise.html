@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+Let my=new Promise((resolve,reject)=>
+{
+	setTimeout(function(){
+		resolve("success");//resolve or reject
+
+	},250);
+});
+my.then((successMessage)=>{
+	alert("yay"+successMessage);
+});
+
+//representation of  a function
+</script>
+</body>
+</html>

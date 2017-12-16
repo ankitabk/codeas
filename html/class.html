@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+function Blog( id,title){
+this.id=id;
+this.title=title;
+this.log=function(){
+	console.log(this);
+}
+}
+var aa=new Blog(1,"hah");
+aa.log();//prototype for defining the elements outsise the class 
+Blog.prototype.log1=function(){
+	console.log(this);
+}
+var bb=new Blog(2,"yy");
+bb.log1();
+</script>
+</body>
+</html>

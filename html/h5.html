@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>
+		inputform
+	</title>
+</head>
+<body>
+	<form  id="form1" > 
+    name:<input  type="text" id="userid">
+    <br>
+   password:<input type="text" id="pw">
+   <br>
+   <button type="button" onclick="rand();">Register</button>
+</form>
+
+
+     <form  id="form2" onsubmit="return fun();" action="huu.html"> 
+    name:<input  type="text" id="userid1">
+    <br>
+   password:<input  type="text" id="pw1">
+   <br>
+    <input type="submit" id="sub">
+</form>
+	<script type="text/javascript">
+	function rand(){
+	var c=document.forms[0].userid.value;
+	var d=document.forms[0].pw.value;
+     localStorage.setItem(c,d);
+}
+function fun(){
+		var aa=document.forms[1].userid1.value;
+		var bb=document.forms[1].pw1.value;
+    var bc= localStorage.getItem(aa);
+     if(bc==bb){
+     	return true;
+     }
+     else{
+     	alert("sorry");
+     	return false;
+     }
+}
+//localStorage.setItem("username","ankita");
+//alert(localStorage.getItem("username"));
+	</script>
+</body>
+</html>

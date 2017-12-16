@@ -1,0 +1,237 @@
+<html>
+<head>
+	<title>
+  FOOD BLOG
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"
+	 <link rel="stylesheet" type="text/css" href="pro.css">
+</head>
+<body >
+	<div class="container" >	
+	  <div class="row">	
+     <div class=" col-12">		
+	     <div id="navig">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="#">FOOD BLOG</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="por.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#" id="uname">Pricing</a>
+      </li>
+        </ul>
+
+        <!--logout-->
+        <form action="por.html"onSubmit="func3()">
+        <button type="submit" class="btn btn-primary" data-toggle="modal" id="logout" style="margin-right:10px" >
+            LogOut
+       </button>  
+       </form>
+
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+  <!--button1-->
+<!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1 " style="margin-left:10px" id="signin">
+     SignIn
+   </button>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+       <div class="modal-content">
+        <form onsubmit="return func2()" action="por.html"><!--onsubmit if we need to vlidate the data and the action is performed once onsubmit is treu-->
+           <div class="form-group">
+       <label for="user1" >Username</label>
+       <input class="form-control" type="text" placeholder="Username"id="u1">
+       </div>
+        <div class="form-group">
+       <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+       </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+  </div>
+</div>
+<!--button2-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal " style="margin-left:10px" id="signup">
+  SignUp
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <form >
+       <div class="form-group">
+       <label for="user2" >Username</label>
+       <input class="form-control" type="text" placeholder="Username" id="u2">
+       </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+  </div>
+  <button type="submit"  onclick="funct()" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+  </div>
+</div>
+
+  </div>
+</nav>
+</div>
+</div>
+</div>
+<!--row 2-->
+<div class="row">
+<div class="col-12">	
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="pic4.jpg" alt="First slide" style="height:70%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="pic5.jpg" alt="Second slide" style="height:70%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="pic6.jpg" alt="Third slide" style="height:70%">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="dosa.jpg" alt="Card image cap" style="margin-top:40px">
+  <div class="card-body">
+    <h4 class="card-title">Dosa</h4>
+    <p class="card-text">Dosa is a type of pancake from the Indian subcontinent, made from a fermented batter. It is somewhat similar to a crepe in appearance. Its main ingredients are rice and black gram. Dosa is a typical part of the South Indian diet and popular all over the Indian subcontinent. Traditionally, Dosa is served hot along with sambar, stuffing of potatoes or paneer and chutney. </p>
+    <a href="dosa.html" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+		<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="noodles.jpg" alt="Card image cap"  style="margin-top:40px">
+  <div class="card-body">
+    <h4 class="card-title">Noodles</h4>
+    <p class="card-text">Noodles are a staple food in many cultures made from unleavened dough which is stretched, extruded, or rolled flat and cut into one of a variety of shapes. While long, thin strips may be the most common, many varieties of noodles are cut into waves, helices, tubes, strings, or shells, or folded over.</p>
+    <a href="noodles.html" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+	<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="cake.jpg" alt="Card image cap"  style="margin-top:40px">
+  <div class="card-body">
+    <h4 class="card-title">Cheese Cake</h4>
+    <p class="card-text">Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest layer, consists of a mixture of soft, fresh cheese (typically cream cheese or ricotta), eggs, and sugar; if there is a bottom layer it often consists of a crust or base made from graham crackers, pastry, or sponge cake. </p>
+    <a href="cake.html" class="btn btn-primary">Read More</a>
+  </div>
+</div>	
+	</div>
+<div class="row">
+	<div class="col-12">
+    <div class="card" style="width: 70rem; margin-top:20px">
+  <div class="card-body">
+    <h4 class="card-title " style="text-align:centre">About us</h4>
+      <ul>
+      	<a href=" "><li> Contact Us</li><a>
+      		<p> Follow us on</p>
+      	<a href=" "><li>Twitter </li><a>
+      	<a href=" "><li>Facebook</li><a>
+      	<a href=" "><li>PinInterest</li><a>	
+      	</ul>
+    <a href="por.html" class="btn btn-primary">Home</a>
+  </div>
+</div>
+</div>
+	</div>
+</div>	
+</div>
+<script type="text/javascript">
+var uu=localStorage.getItem("curr");
+if(uu!=null){
+    document.getElementById("uname").innerHTML=uu;
+   document.getElementById("logout").style="display: ";
+   document.getElementById("signin").style="display:none ";
+   document.getElementById("signup").style="display: none";
+}
+else {
+   document.getElementById("uname").innerHTML="user";
+   document.getElementById("logout").style="display:none";
+   document.getElementById("signin").style="display:";
+   document.getElementById("signup").style="display:";
+   
+}
+
+function funct(){
+  var arr=[];
+  arr=JSON.parse(localStorage.getItem("info"))||[];
+  var vals={
+ "name":document.getElementById("u2").value,
+"mail":document.getElementById("exampleInputEmail2").value,
+"pass":document.getElementById("exampleInputPassword2").value,
+"bool":document.getElementById("true"),
+  }
+  if(arr!=null&&arr.length<1)
+  {
+    arr.push(vals);
+  }
+  else{
+    arr.push(vals);
+  }
+
+localStorage.setItem("info",JSON.stringify(arr));
+alert("you have successsfully registered");
+} 
+var nm;
+function func2(){
+  var aa=document.getElementById("u1").value;
+  var bb=document.getElementById("exampleInputEmail1").value;
+  var cc=document.getElementById("exampleInputPassword1").value;
+  arr=JSON.parse(localStorage.getItem("info"));
+  for(var i=0;i<arr.length;i++){
+     if(arr[i].name==aa&&arr[i].mail==bb&&arr[i].pass==cc){
+         //alert("you have successsfully signed in");
+         localStorage.setItem("curr",aa);
+        return true;
+     }
+  }
+         alert("check your name or password");
+         return false;
+}
+function func3(){
+  localStorage.removeItem("curr");
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script
+</body>
+</html>

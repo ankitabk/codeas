@@ -1,0 +1,28 @@
+
+<html>
+<head>
+	<title>
+		form action</title>
+	</head>
+	<body>
+		<button onclick="loadDoc()">Load Text</button>
+		<div id="ajax"></div>
+		<script type="text/javascript">
+		function loadDoc(){
+			var name=document.getElementById("name").value;
+			var pass=document.getElementById("pass").value;
+			
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+				if(this.readyState==4 && this.status==200){
+					document.getElementById("ajax").innerHTML=this.responseText;
+				}
+			};
+			var str="http://172.16.32.123:3000/get?username="+name"&password="+pass;
+			xhttp.open("GET",str,true);
+			xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xhttp.send();
+		}
+		</script>
+	</body>
+</html>
